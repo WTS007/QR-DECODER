@@ -1,0 +1,17 @@
+name: Protect Main Branch
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  protect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Prevent copy
+        run: |
+          if [ "$GITHUB_ACTOR" != "$GITHUB_REPOSITORY_OWNER" ]; then
+            echo "Only repository owner can modify main branch"
+            exit 1
+          fi

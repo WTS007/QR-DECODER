@@ -1,0 +1,182 @@
+# Python Virtual Environment
+# Virtual environments contain project-specific dependencies and should never be shared
+.venv/
+venv/
+ENV/
+env/
+virtualenv/
+
+# Python Compilation Files
+# These are generated during code execution and differ across machines
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.pyc
+
+# Distribution & Packaging
+# Build artifacts and distribution files are environment-specific
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Testing and Coverage
+# Test results and coverage reports should be generated locally
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Documentation
+# Generated documentation should be rebuilt rather than versioned
+docs/_build/
+docs/generated/
+*.pdf
+*.doc
+*.docx
+
+# Jupyter Notebook
+# Notebook checkpoints contain machine-specific information
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+profile_default/
+ipython_config.py
+
+# IDEs and Editors
+# Editor-specific settings and workspace files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.settings/
+.project
+.classpath
+.c9/
+*.launch
+*.sublime-workspace
+*.sublime-project
+
+# Operating System
+# OS-generated files vary by system
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Environment Variables and Secrets
+# These files often contain sensitive information
+.env
+.venv
+.env.local
+.env.*.local
+env.bak/
+venv.bak/
+
+# Logs and Databases
+# Local logs and databases should be generated, not shared
+*.log
+*.sql
+*.sqlite
+*.sqlite3
+db.sqlite3
+*.db
+log/
+logs/
+
+# Application-Specific
+# QR Scanner specific ignored files
+temp_capture.png
+qr_scan_history.txt
+qr_scanner_settings.json
+*.spec
+output/
+
+# Dependencies
+# Dependency lock files for different package managers
+Pipfile.lock
+poetry.lock
+requirements.local.txt
+
+# Media and Generated Content
+# Local media and generated content should not be tracked
+media/
+static/
+generated/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.ico
+*.svg
+!assets/*.ico
+!assets/*.svg
+
+# Backup Files
+# Backup and temporary files
+*.bak
+*.tmp
+*.temp
+*~
+.*.swp
+.*.swo
+
+# Local Development
+# Files used for local development only
+docker-compose.override.yml
+docker-compose.local.yml
+local_settings.py
+override.py
+
+# Build System
+# Build system specific files
+.gradle/
+target/
+node_modules/
+package-lock.json
+yarn.lock
+
+# Security
+# Files that might contain sensitive information
+*.pem
+*.key
+*.pfx
+*.p12
+*.cer
+*.der
+*.crt
+
+# Exceptions
+# Add any exceptions to ignored files here
+!requirements.txt
+!README.md
+!LICENSE
+!.gitignore
